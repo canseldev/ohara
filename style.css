@@ -1,0 +1,125 @@
+html, body, p {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    background: #7F7FD5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.ana {
+    display: flex;
+    justify-content: space-between;
+}
+.left-menu {
+    background-color: aliceblue;
+    height: 100vh;
+    
+}
+.left-menu .logo {
+    margin: 30px;
+    padding: 20px;
+    color: #86A8E7;
+    font-weight: bold;
+    font-size: 30px;
+}
+.left-menu .menuler ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin:20px;
+    padding: 0;
+}
+.left-menu .menuler ul button {
+    margin:10px 30px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #86A8E7;
+    color: aliceblue;
+    border: 1px solid #86A8E7;
+    font-size: 20px;
+    font-weight: bold;
+}
+.left-menu .menuler ul li a {
+    text-decoration: none;
+    border: 1px solid #86A8E7;
+    border-radius: 20px;
+    padding: 10px;
+    display: block;
+    background-color: #86A8E7;
+    color: aliceblue;
+}
+main {
+    width: 100%;
+}
+main .container {
+    display: flex;
+    justify-content: center;
+    
+}
+main .container .right ul {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    gap: 15px;
+    list-style: none;
+}
+.container .right ul li a {
+    text-decoration: none;
+    color: rgb(209, 206, 206);
+}
+.right-menu {
+    background-color:aliceblue ;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100vh;
+}
+.right-menu .progres span,
+.upcoming span {
+    margin: 15px;
+    color: rgb(113, 109, 109);
+}
+.right-menu ul {
+    list-style: none;
+}
+.right-menu .adsoyad {
+    display: flex;
+    align-items: center;
+}
+.right-menu .adsoyad img{
+    color:yellow;
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: rgb(226, 221, 221);
+} 
+.right-menu .adsoyad span{
+    margin: 10px;
+    padding: 15px;
+    color: darkgray;
+    background-color:rgb(242, 241, 241);
+    border-radius: 30px;
+}
+.right-menu .progres ul li a ,
+.right-menu .upcoming ul li a {
+    text-decoration: none;
+    background-color: #7F7FD5;
+    color:aliceblue ;
+    margin: 10px;
+    padding: 15px;
+    display: block;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+
+
+
