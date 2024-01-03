@@ -17,6 +17,8 @@ body {
 .left-menu {
     background-color: aliceblue;
     height: 100vh;
+    min-width: 280px;
+    overflow-y: scroll;
     
 }
 .left-menu .logo {
@@ -55,11 +57,37 @@ body {
 }
 main {
     width: 100%;
+    margin: 20px;
+    height: calc(100vh - 40px);
+    overflow-y: scroll;
+}
+main .head {
+    display: flex;
+    justify-content: space-between;
+}
+main .head #search {
+    border: none;
+    background-color: aliceblue;
+    color: gray;
+    padding: 10px 30px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+main .head i {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(77, 76, 76);
 }
 main .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     
+}
+main .container .left {
+    font-weight: normal;
+    color: rgb(77, 76, 76);
 }
 main .container .right ul {
     display: flex;
@@ -72,6 +100,24 @@ main .container .right ul {
     text-decoration: none;
     color: rgb(209, 206, 206);
 }
+main .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+main .content img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 40px;
+}
+main .content .down {
+    display: flex;
+    gap:20px;
+}
+main .content .down img {
+    width: 50%;
+}
 .right-menu {
     background-color:aliceblue ;
     font-weight: bold;
@@ -80,6 +126,8 @@ main .container .right ul {
     align-items: flex-start;
     flex-direction: column;
     height: 100vh;
+    overflow-y: scroll;
+    min-width: 370px;
 }
 .right-menu .progres span,
 .upcoming span {
@@ -88,6 +136,8 @@ main .container .right ul {
 }
 .right-menu ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 .right-menu .adsoyad {
     display: flex;
@@ -99,13 +149,13 @@ main .container .right ul {
     height: 70px;
     margin: 20px;
     border-radius: 15px;
-    background-color: rgb(226, 221, 221);
+    background-color: rgb(199, 199, 199);
 } 
 .right-menu .adsoyad span{
     margin: 10px;
     padding: 15px;
-    color: darkgray;
-    background-color:rgb(242, 241, 241);
+    color: rgb(105, 105, 105);
+    background-color:rgb(199, 199, 199);
     border-radius: 30px;
 }
 .right-menu .progres ul li a ,
